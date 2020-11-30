@@ -13,7 +13,7 @@ var addr = "127.0.0.1:2002"
 
 func main() {
 	//获取zk节点列表
-	zkManager := zookeeper.NewZkManager([]string{"127.0.0.1:2181"})
+	zkManager := zookeeper.NewZkManager([]string{"172.16.76.142:2181"})
 	err := zkManager.GetConnect()
 	if err != nil {
 		log.Fatal("zkManager.GetConnect err: ",err)
@@ -24,7 +24,7 @@ func main() {
 	fmt.Println("server node:")
 	fmt.Println(zlist)
 	if err != nil {
-		log.Println(err)
+		log.Fatal("zkManager.GetServerListByPath err: ",err)
 	}
 
 	//动态监听节点变化

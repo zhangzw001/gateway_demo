@@ -42,7 +42,7 @@ func (r *RealServer) Run() {
 	}
 	go func() {
 		//注册zk节点
-		zkManager := zookeeper.NewZkManager([]string{"127.0.0.1:2181"})
+		zkManager := zookeeper.NewZkManager([]string{"172.16.76.142:2181"})
 		err := zkManager.GetConnect()
 		if err != nil {
 			fmt.Printf(" connect zk error: %s ", err)
