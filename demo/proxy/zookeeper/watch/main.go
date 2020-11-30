@@ -14,7 +14,10 @@ var addr = "127.0.0.1:2002"
 func main() {
 	//获取zk节点列表
 	zkManager := zookeeper.NewZkManager([]string{"127.0.0.1:2181"})
-	zkManager.GetConnect()
+	err := zkManager.GetConnect()
+	if err != nil {
+		log.Fatal("zkManager.GetConnect err: ",err)
+	}
 	defer zkManager.Close()
 
 	zlist, err := zkManager.GetServerListByPath("/real_server")
