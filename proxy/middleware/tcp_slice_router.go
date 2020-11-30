@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"context"
-	"github.com/e421083458/gateway_demo/proxy/tcp_proxy"
+	"github.com/zhangzw001/gateway_demo/proxy/tcp_proxy"
 	"net"
 )
 

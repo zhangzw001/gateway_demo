@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/tcp_middleware"
-	"github.com/e421083458/gateway_demo/proxy/tcp_proxy"
+	"github.com/zhangzw001/gateway_demo/proxy/load_balance"
+	"github.com/zhangzw001/gateway_demo/proxy/proxy"
+	"github.com/zhangzw001/gateway_demo/proxy/tcp_middleware"
+	"github.com/zhangzw001/gateway_demo/proxy/tcp_proxy"
 	"net"
 )
 

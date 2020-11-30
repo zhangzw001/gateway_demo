@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/middleware"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/zhangzw001/gateway_demo/proxy/middleware"
+	"github.com/zhangzw001/gateway_demo/proxy/proxy"
+	"github.com/zhangzw001/gateway_demo/proxy/public"
 	"log"
 	"net/http"
 	"net/url"
